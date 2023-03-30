@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Page</title>
+	
+	<link href="video-page.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">    
+</head>
+<body>
+	<video src="images/autoplay-video.mp4" autoplay playsinline controls></video>
+
+	<div class="button back-button transparent" onclick="goToIndex('landing-page.html')" onmouseover="this.classList.remove('transparent'); this.classList.add('opaque')" onmouseout="this.classList.remove('opaque'); this.classList.add('transparent')">Back</div>
+
+	<div class="button continue-button transparent" onclick="goToIndex('home-page.html')" onmouseover="this.classList.remove('transparent'); this.classList.add('opaque')" onmouseout="this.classList.remove('opaque'); this.classList.add('transparent')">Continue</div>
+
+	<script src="functions.js">
+		
+	</script>
+</body>
+</html>

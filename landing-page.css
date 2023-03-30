@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .landing-page {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text-column {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      float: right;
+  }
+
+
+  .img-column {
+      float: left;
+      height: 100%;
+  }
+
+
+  
+  h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Rufina', serif;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+
+  }
+
+  P {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Sintony', sans-serif;
+    word-wrap: break-word;
+    margin-bottom: 100px;
+
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Sintony', sans-serif;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    width: 200px;
+    margin: auto;
+}
+
+button:hover {
+  background-color: #4e545c; /* Change this to the hover color you want */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add a stronger shadow effect on hover */
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .text-column {
+        text-align: center;
+        margin: auto;
+    }
+
+    h1 {
+        margin-left: 50px;
+    }
+
+    P {
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    button {
+        margin-bottom: 25px;
+        margin-left: 175px;
+    }
+}
+  
