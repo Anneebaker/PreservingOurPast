@@ -11,23 +11,23 @@
 </head>
 <body>
 	<div class="container">
-		<div class="column column1">
-			<div class="column-title">The Mount Zion Baptist Church: MZBCPS</div>
-			<div class="overlay">
+		<div class="column column1" id="church-column">
+			<div class="column-title" id="church-title">The Mount Zion Baptist Church: MZBCPS</div>
+			<div class="overlay" id="church-overlay">
                 <p>The current efforts of the Mount Zion Baptist Church Preservation Society to repurpose the historical Mount Zion Baptist Church in Athens, Ohio which was a safe place for African Americans to gather from 1905-2000.</p>
                 <button onclick="goToPage('church.html')">Read More</button>
 			</div>
 		</div>
-		<div class="column column2">
-			<div class="column-title">The Berry Hotel: Edward and Mattie Berry</div>
-			<div class="overlay">
+		<div class="column column2" id="hotel-column">
+			<div class="column-title" id="hotel-title">The Berry Hotel: Edward and Mattie Berry</div>
+			<div class="overlay" id="hotel-overlay">
 				<p>The building on Court Street that is known today for its delicious diner food, was once the location of the Berry Hotel–an important landmark in the lost history of African Americans in Athens, Ohio.</p>
                 <button onclick="goToPage('hotel.html')">Read More</button>
 			</div>
 		</div>
-		<div class="column column3">
-			<div class="column-title">The Athens Courthouse: Andrew Jackson Davison</div>
-			<div class="overlay">
+		<div class="column column3" id="courthouse-column">
+			<div class="column-title" id="courthouse-title">The Athens Courthouse: Andrew Jackson Davison</div>
+			<div class="overlay" id="courthouse-overlay">
 				<p>Inside the walls of the Athens Courthouse lies a photo of an African American man who's efforts took almost half a century to be recognized formally.</p>
                 <button onclick="goToPage('courthouse.html')">Read More</button>
             </div>
@@ -37,12 +37,62 @@
     </body>
 
     <script src="functions.js">
-		const overlay = document.getElementById('overlay');
-		const clickable = document.getElementById('column');
-		clickable.addEventListener('click', () => {
-    		overlay.style.opacity = 1;
+	</script>
+	<script>
+		function changeOpacity(overlay, title) {
+			if(overlay.style.display === 'none') {
+				overlay.style.display = 'flex';
+				title.style.display = 'none';
+			} else {
+				overlay.style.display = 'none';
+				title.style.display = 'flex';
+			}
+		}
+		const churchOverlay = document.getElementById('church-overlay');
+		const hotelOverlay = document.getElementById('hotel-overlay');
+		const courthouseOverlay = document.getElementById('courthouse-overlay');
+		const churchCol = document.getElementById('church-column');
+		const hotelCol = document.getElementById('hotel-column');
+		const courthouseCol = document.getElementById('courthouse-column');
+		const churchTitle = document.getElementById('church-title');
+		const hotelTitle = document.getElementById('hotel-title');
+		const courthouseTitle = document.getElementById('courthouse-title');
+
+		churchCol.addEventListener('click', () => {
+    		changeOpacity(churchOverlay, churchTitle);
   		});
-		
+		churchCol.addEventListener('mouseenter', () => {
+    		churchOverlay.style.display = 'flex';
+			churchTitle.style.display = 'none';
+  		});
+		churchCol.addEventListener('mouseleave', () => {
+    		churchOverlay.style.display = 'none';
+			churchTitle.style.display = 'flex';
+  		});
+
+		hotelCol.addEventListener('click', () => {
+    		changeOpacity(hotelOverlay, hotelTitle);
+  		});
+		hotelCol.addEventListener('mouseenter', () => {
+    		hotelOverlay.style.display = 'flex';
+			hotelTitle.style.display = 'none';
+  		});
+		hotelCol.addEventListener('mouseleave', () => {
+    		hotelOverlay.style.display = 'none';
+			hotelTitle.style.display = 'flex';
+  		});
+
+		courthouseCol.addEventListener('click', () => {
+			changeOpacity(courthouseOverlay, courthouseTitle);
+  		});
+		courthouseCol.addEventListener('mouseenter', () => {
+    		courthouseOverlay.style.display = 'flex';
+			courthouseTitle.style.display = 'none';
+  		});
+		courthouseCol.addEventListener('mouseleave', () => {
+    		courthouseOverlay.style.display = 'none';
+			courthouseTitle.style.display = 'flex';
+  		});
 	</script>
     </html>   
 
