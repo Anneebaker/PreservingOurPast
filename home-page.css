@@ -132,8 +132,8 @@ text-transform: uppercase;
 
     .column {
         border: 2px solid black;
-        min-width: 100%;
-        min-height: 75%;
+        max-width: 100%;
+        min-height: 50%;
         width: auto;
         height: auto;
     }
