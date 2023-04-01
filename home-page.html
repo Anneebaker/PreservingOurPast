@@ -37,6 +37,11 @@
     </body>
 
     <script src="functions.js">
+		const overlay = document.getElementById('overlay');
+		const clickable = document.getElementById('column');
+		clickable.addEventListener('click', () => {
+    		overlay.style.opacity = 1;
+  		});
 		
 	</script>
     </html>   
