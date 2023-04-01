@@ -9,15 +9,13 @@
     height: 100%;
     width: 100%;
     background-color: black;
+    display: flex;
   }
   
   .landing-page {
     background-color: black;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .text-column {
@@ -25,12 +23,20 @@
       flex-direction: column;
       color: white;
       float: right;
+      text-align: center;
   }
 
 
   .img-column {
       float: left;
       height: 100%;
+      width: 100%; 
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
 
@@ -41,8 +47,8 @@
     font-weight: bold;
     font-family: 'Rufina', serif;
     word-wrap: break-word;
-    margin-bottom: 25px;
-
+    margin-bottom: 10px;
+    margin-top: auto;
   }
 
   P {
@@ -51,8 +57,10 @@
     margin-bottom: 0.5rem;
     font-family: 'Sintony', sans-serif;
     word-wrap: break-word;
-    margin-bottom: 100px;
-
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   button {
@@ -72,8 +80,11 @@
     border-radius: 20px;
     transition-duration: 0.4s;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-    width: 200px;
-    margin: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 25px;
 }
 
 button:hover {
@@ -84,11 +95,29 @@ button:hover {
 
 
 
+
+
 @media only screen and (max-width: 768px) {
+
+  .body, html {
+    height: 100%;
+    width: 100%;
+  }
     .landing-page {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        width: 100%;
     }
+
+    .text-column {
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
 
 
     .text-column {
@@ -96,18 +125,5 @@ button:hover {
         margin: auto;
     }
 
-    h1 {
-        margin-left: 50px;
-    }
-
-    P {
-        margin-bottom: 25px;
-        margin-left: 50px;
-    }
-
-    button {
-        margin-bottom: 25px;
-        margin-left: 175px;
-    }
 }
   

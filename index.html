@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@700&family=Sintony&display=swap" rel="stylesheet">
-<link href="landing-page.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
 <link href="landing-page-mobile.css" rel="stylesheet">
 
   </head>
@@ -17,19 +17,13 @@
         <img class="landing-img" src="images/landing-page-bg.jpg">
       </div>
       <div class="text-column">
-        <h1>Preserving our Past</h1>
-        <p>“Objects of the past are important to preserve because they can tell so many stories about people who weren’t able to tell their own stories.” - Katherine Jellison, Ohio University Professor of History</p>
-        <button id="enter-btn">Enter</button>
+          <h1>Preserving our Past</h1>
+          <p>“Objects of the past are important to preserve because they can tell so many stories about people who weren’t able to tell their own stories.” - Katherine Jellison, Ohio University Professor of History</p>
+          <button onclick = "goToPage('video-page.html')" id="enter-btn">Enter</button>
       </div>
-      <br> 
-      <br>
     </div>
-    <script>
-      const enterBtn = document.getElementById('enter-btn');
+    <script src="functions.js">
 
-      enterBtn.addEventListener('click', () => {
-        window.location.href = 'video-page.html';
-      });
     </script>
   </body>
 

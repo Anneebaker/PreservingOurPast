@@ -1,3 +1,3 @@
-function goToIndex(location) {
+function goToPage(location) {
     window.location.href = location;
 }
