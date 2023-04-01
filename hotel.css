@@ -123,8 +123,8 @@ background-size: cover;
 }
   .oval-image {
     border-radius: 50%;
-    width: 300px; 
-    height: 400px; 
+    width: 50%; 
+    height: 70%; 
     object-fit: cover; 
   }
 
@@ -135,13 +135,14 @@ background-size: cover;
     justify-content: center;
     margin: 0 10px;
     margin-left: 50px;
-    margin-right: 50px
+    margin-right: 50px;
+    width: 50%;
   }
 
 h4 {
   font-family: "Rufina", serif;
   color: white;
-
+  width: auto;
 }
 
 .button2 {
@@ -204,9 +205,16 @@ h4 {
 
   .oval-image {
     border-radius: 50%;
-    width: 175px; 
-    height: 250px; 
     object-fit: cover; 
+    width: 70%;
+    height: 70%;
+  }
+
+  h4 {
+    text-align: center;
+    word-break: none;
+    white-space: nowrap;
+  
   }
 }
 
