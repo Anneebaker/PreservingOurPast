@@ -167,4 +167,9 @@ flex: 1;
     max-width: 100%;
   }
 
+  .column-grey {
+    flex-direction: column-reverse;
+  }
+
+
 }
