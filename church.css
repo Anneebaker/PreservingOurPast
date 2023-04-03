@@ -130,6 +130,32 @@ flex: 1;
   opacity: 0.5;
 }
 
+.column-grey {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #49545F; 
+  }
+
+  .text-column-white {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 25px;
+    color: white;
+    }
+
+    .img-column {
+      flex: 1;
+      margin: 25px;
+      }
+
+      .my-img-left {
+        width: 500px;
+        float: left;
+      }
+
 
 
 
