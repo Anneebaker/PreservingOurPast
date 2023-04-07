@@ -152,9 +152,16 @@ flex: 1;
       }
 
       .my-img-left {
-        width: 500px;
+        width: 600px;
         float: left;
       }
+
+.footer {
+  background-color: #49545F; 
+  color: white;
+  text-align: center;
+  
+}
 
 
 
