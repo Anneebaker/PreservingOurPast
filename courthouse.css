@@ -70,7 +70,7 @@ background-size: cover;
 
 .column-grey {
 display: flex;
-flex-direction: row;
+flex-direction: row-reverse;
 align-items: center;
 justify-content: space-between;
 background-color: #49545F; 
@@ -78,7 +78,7 @@ background-color: #49545F;
 
 .column-white {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff; 
@@ -106,12 +106,14 @@ color: white;
 
 .my-img-left {
   width: 400px;
-  float: left;
+  float: right;
+  max-width: 100%;
 }
 
 .my-img-right {
   width: 500px;
-  float: right;
+  float: left;
+  max-width: 100%;
 }
 
 .button2 {
@@ -136,6 +138,7 @@ color: white;
   
 }
 
+
 .opaque {
   opacity: 1;
 }
@@ -151,6 +154,22 @@ color: white;
   
 }
 
+.animate-bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -161,6 +180,14 @@ color: white;
 
   .column-grey {
     flex-direction: column-reverse;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .text-column-blue, .text-column-white {
+    text-align: center;
   }
 
   

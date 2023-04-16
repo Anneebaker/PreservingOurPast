@@ -83,7 +83,7 @@ text-transform: uppercase;
     background-image: url('images/church.jpg');
 }
 .column2 {
-    background-image: url('images/Berry Hotel in Color.jpg');
+    background-image: url('images/Berry\ Hotel\ in\ Color.png');
 }
 .column3 {
     background-image: url('images/Athens_Courthouse_15.jpg');
@@ -133,8 +133,8 @@ text-transform: uppercase;
     .column {
         border: 2px solid black;
         max-width: 100%;
-        min-height: 50%;
-        width: auto;
+        min-height: 75%;
+        width: 100%;
         height: auto;
     }
     

@@ -79,7 +79,7 @@ padding-left: 20px;
 
 .column {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   background-color: white; 
@@ -97,8 +97,7 @@ flex: 1;
 
 .my-img {
   width: 100%;
-  float: right;
-  margin: 25px;
+  float: left;
 }
 
 .button2 {
@@ -132,7 +131,7 @@ flex: 1;
 
 .column-grey {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   background-color: #49545F; 
@@ -151,23 +150,45 @@ flex: 1;
       margin: 25px;
       }
 
-      .my-img-left {
-        width: 600px;
-        float: left;
-      }
+.my-img-left {
+  width: 600px;
+  float: right;
+  max-width: 100%;
+}
 
 .footer {
-  background-color: #49545F; 
-  color: white;
+  color: #49545F;
   text-align: center;
   
 }
 
+.tl-headline-date {
+color: white;
+}
 
+.animate-bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+  
 
 
 
 @media only screen and (max-width: 768px) {
+  body, html {
+    width: 100%;
+  }
 
   .column {
     flex-direction: column;
@@ -177,6 +198,22 @@ flex: 1;
   .column-grey {
     flex-direction: column-reverse;
   }
+
+
+  .my-img {
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .text-column-white, .text-column {
+    text-align: center;
+  }
+
+
+
 
 
 }
